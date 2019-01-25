@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeGym</title>
+</head>
+<body>
+<script>
+    function Cricle(radius) {
+        this.radius = radius;
+        // this.colors = colors;
+        this.getRadius = getRadius;
+        this.getArea = getArea;
+        this.setRadius = setRadius;
+    }
+    function setRadius(radius) {
+        this.radius = radius;
+    }
+    function getRadius() {
+        return this.radius;
+    }
+    function getArea() {
+        return Math.PI*Math.pow(this.radius,2);
+    }
+    let crl1 = new Cricle();
+    crl1.setRadius(2);
+    alert("radius: " +crl1.getRadius() + " ; area: "+crl1.getArea());
+
+
+    
+</script>
+</body>
+</html>
